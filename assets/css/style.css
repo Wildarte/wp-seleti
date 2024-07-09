@@ -1,0 +1,246 @@
+:root{
+    --main-color: #ff0000;
+    --second-color: #af5104;
+
+    --color-gray-2: #343434;
+    --color-gray-3: #454545;
+    
+    --color-gray: #F5F5F5;
+    --color-white: #ffffff;
+    --color-black: #000000;
+}
+
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.btn-default{
+    background-color: var(--main-color);
+    color: var(--color-white);
+    padding: 6px 20px;
+    border-radius: 4px;
+}
+.p-10{
+    padding: 10px;
+}
+.content-min{
+    padding: 60px 10px;
+}
+.content-default{
+    padding: 100px 10px;
+}
+
+header.header{
+    background-color: var(--color-white);
+}
+.content_header{
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.col_header{
+    width: 33%;
+}
+.hero{
+    background-image: url(../img/banner_home_curso_livre.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content_hero{
+    height: 420px;
+    position: relative;
+}
+
+.search_jobs{
+    background-color: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(2,2,2, .3);
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    width: 100%;
+    padding: 20px;
+}
+.category_jobs{
+    width: 100%;
+}
+.over_category_jobs{
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.over_category_jobs a{
+    width: calc(100% / 9 - 10px);
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--main-color);
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 4px;
+}
+.over_category_jobs a:hover{
+    box-shadow: 2px 2px 10px rgba(2,2,2, .3);
+}
+.over_category_jobs a img, .over_category_jobs a svg{
+    margin: auto;
+    margin-bottom: 15px;
+}
+.over_category_jobs a svg{
+    stroke: var(--main-color);
+}
+.over_category_jobs a svg path{
+    stroke: var(--main-color);
+}
+.over_category_jobs a p{
+    text-align: center;
+}
+.form_search_jobs{
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+}
+.form_search_jobs .form_group{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    width: 40%;
+}
+.form_group label{
+    width: 100%;
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-black);
+    width: 100%;
+}
+.form_group input{
+    border: 1px solid #111111;
+    padding: 6px;
+    color: #111111;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+}
+.form_group_button{
+    padding: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    width: 20%;
+}
+.form_group_button button{
+    width: 100%;
+    padding: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+    color: var(--color-white);
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+}
+
+.list_card_vaga{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card_vaga{
+    width: calc(25% - 20px);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(2,2,2, .3);
+    transition: all .23s;
+}
+.card_vaga:hover{
+    box-shadow: 0 10px 50px rgba(2,2,2, .3);
+    transform: scale(1.01);
+}
+.card_vaga a{
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--color-gray-2);
+    padding: 15px;
+}
+
+.cat_vaga{
+    font-size: .9em;
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+.title_card_vaga{
+    color: var(--color-black);
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.1em;
+    text-transform: capitalize;
+}
+.location_card_vaga{
+    margin-bottom: 10px;
+}
+.resume_card_vaga{
+    color: var(--color-gray-3);
+    font-size: 1em;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+.btn_card_vaga{
+    color: var(--color-white);
+    background-color: var(--main-color);
+    padding: 6px 15px;
+    border-radius: 5px;
+}
+
+.head_section{
+    margin-bottom: 20px;
+}
+
+footer.footer{
+    background-color: var(--main-color);
+}
+.col_footer{
+    width: 25%;
+}
+.col_footer h3{
+    margin-bottom: 15px;
+}
+.col_footer ul li a{
+    color: var(--color-black);
+}
+.bottom_footer{
+    background-color: var(--second-color);
+}
+
+nav.menu{
+    display: flex;
+}
+nav.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav.menu ul li a{
+    padding: 4px 15px;
+    color: var(--color-black);
+}
+.logo_footer{
+    margin-bottom: 20px;
+}
