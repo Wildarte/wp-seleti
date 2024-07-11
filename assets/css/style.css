@@ -244,3 +244,8 @@ nav.menu ul li a{
 .logo_footer{
     margin-bottom: 20px;
 }
+
+.de{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: ;
+}
