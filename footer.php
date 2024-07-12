@@ -1,9 +1,9 @@
     <footer class="footer">
         <div class="container d-flex content-min">
             <div class="col_footer d-flex">
-                <a href="" class="logo_footer">
-                    <img src="assets/img/logo_2023.png" alt="">
-                </a>
+                <div class="logo_footer">
+                    <?php my_footer_logo(); ?>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, velit! Ullam modi velit rem consectetur ab, commodi</p>
             </div>
             <div class="col_footer">
@@ -36,12 +36,11 @@
         </div>
         <div class="bottom_footer">
             <div class="container d-flex justify-center p-10">
-                <p>@ Todos od direitos reservados</p>
+                <p>© <?= date('Y') ?> - Todos os direitos reservados</p>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
     <?php wp_footer() ?>
 </body>
 </html>
