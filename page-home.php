@@ -85,7 +85,7 @@
         </section>
 
         <section>
-            <div class="container content-default">
+            <div class="container content-default content_vagas">
                 <header class="head_section">
                     <h2 class="title-default">Últimas vagas de emprego</h2>
                 </header>

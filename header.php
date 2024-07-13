@@ -16,6 +16,17 @@
 
             <div class="col_header d-flex align-center col_menu">
                 <nav class="menu col_header d-flex justify-center">
+                    <div class="head_mobile">
+                        <div class="logo_mobile">
+                            <?php the_custom_logo(); ?>
+                        </div>
+
+                        <div class="right_header">
+                            <span class="close_menu">
+                                <img src="<?= get_template_directory_uri() ?>/assets/img/btn-close.png" alt="">
+                            </span>
+                        </div>
+                    </div>
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'primary',

@@ -10,7 +10,9 @@
     --color-black: #000000;
 }
 
-
+img{
+    max-width: 100%;
+}
 .container{
     max-width: 1280px;
     margin: auto;
@@ -50,7 +52,7 @@ header.header{
     background-color: var(--color-white);
 }
 .content_header{
-    padding: 20px 10px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -82,8 +84,9 @@ header.header{
     position: absolute;
     left: 0;
     bottom: -40px;
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 20px;
+    margin: 10px;
 }
 .category_jobs{
     width: 100%;
@@ -204,6 +207,7 @@ header.header{
     font-weight: 700;
     font-size: 1.1em;
     text-transform: capitalize;
+    width: 100%;
 }
 .location_card_vaga{
     margin-bottom: 10px;
@@ -292,12 +296,16 @@ nav.menu ul li a{
     background-color: var(--main-color);
     border-radius: 4px;
 }
+.head_mobile{
+    display: none;
+}
+.close_menu{
+    display: flex;
+    width: 24px;
+}
 
 
 @media(max-width: 992px){
-    nav.menu{
-        display: none;
-    }
     .col_menu{
         justify-content: center;
     }
@@ -306,6 +314,54 @@ nav.menu ul li a{
     }
     .card_vaga{
         width: calc(33% - 20px);
+    }
+    nav.menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-white);
+        z-index: 10;
+        display: flex;
+        align-content: flex-start;
+        transition: all .23s;
+    }
+    .open_nav_menu{
+        top: 0!important;
+    }
+    nav.menu ul li{
+        width: 100%;
+        display: flex;
+    }
+    nav.menu ul li a{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .head_mobile{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .head_mobile .logo_mobile a img{
+        width: 200px;
+    }
+    .category_jobs{
+        overflow: auto;
+    }
+    .category_jobs::-webkit-scrollbar{
+        height: 8px;
+        background-color: var(--color-gray);
+    }
+    .category_jobs::-webkit-scrollbar-thumb{
+        background-color: var(--main-color);
+        border-radius: 10px;
+    }
+    .over_category_jobs{
+        min-width: 992px;
     }
 }
 
@@ -326,5 +382,15 @@ nav.menu ul li a{
     }
     .search_jobs{
         bottom: -200px;
+    }
+    .content_vagas{
+        padding-top: 260px;
+    }
+}
+
+@media(max-width: 580px){
+    .card_vaga{
+        width: 100%;
+        margin: 10px 0;
     }
 }
